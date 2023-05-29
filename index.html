@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>Wine Stories</title>
+
+    <link rel="icon" type="image/png" href="assets/favicon.ico"/>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300;400;700&display=swap"
+          rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/1a80831277.js"></script>
+    <script src="script.js" async></script>
+</head>
+<body>
+<header>
+
+    <nav id="nav" class="navbar">
+                <span class="navbar-toggle" id="js-navbar-toggle">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </span>
+
+        <ul class="main-nav" id="js-menu">
+            <li><a href="#about" class="link nav-links">About Us</a></li>
+            <li><a href="#bestsellers" class="nav-links">Bestsellers</a></li>
+            <li><a href="#tasting" class="nav-links">Wine tasting</a></li>
+            <li><a href="#contacts" class="nav-links">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <aside class="quotation">
+        <q>
+            My only regret in life is that I did not drink more wine.
+        </q>
+        <br>
+        <i>Ernest Hemingway</i>
+    </aside>
+    <div id="header-buttons-container">
+        <a target="_blank" href="catalogue.html" class="button">Wine Catalogue</a>
+        <a href="#tasting" class="button">Wine Tasting</a>
+    </div>
+</header>
+
+<section id="about">
+    <div class="about-container">
+        <div>
+            <h2 class="white-text">The Italian wine importer bringing you best of wine</h2>
+            <hr class="hr-margin">
+            <p>Ozzano Selection is a leader in the sale of Italian wines abroad. It all stems from an entrepreneurial
+                idea
+                by Matteo Ozzano. The experience accumulated in over 10 years with the previous company Wine Selection &
+                Trading led the young entrepreneur to change the name of his company, choosing a way that could
+                communicate
+                a more personal relationship between company, customer and territory. Ozzano Selection, in fact, leads
+                back
+                to a brand that identifies with a person capable of offering an important and quality Italian wine
+                selection
+                abroad.</p>
+            <figure>
+                <img src="assets/image.png" alt="Wine glass icon">
+            </figure>
+        </div>
+    </div>
+</section>
+
+<section id="bestsellers">
+    <hr class="border-line top">
+    <div class="bestsellers-container">
+        <div class="info">
+            <h2>Top 3 Bestsellers</h2>
+            <hr class="hr-margin">
+            <p>We believe in providing our members with the most exclusive Italian wines available. <br>
+                The sweat and blood of many generations can be experienced with the passion that goes into each
+                bottle of wine from our selection. </p>
+            <table>
+                <tr class="table-row">
+                    <td class="left top-row">2020</td>
+                    <td class="right top-row">
+                        <h3>Sartori Fira Bianco</h3>
+                        <p>A special wine with wonderful taste.</p>
+                    </td>
+                </tr>
+                <tr class="table-row">
+                    <td class="left">2019</td>
+                    <td class="right">
+                        <h3>Brunelli Bianco di Custoza</h3>
+                        <p>A special wine with wonderful taste.</p>
+                    </td>
+                </tr>
+                <tr class="table-row">
+                    <td class="left bottom-row">2020</td>
+                    <td class="right bottom-row">
+                        <h3>Domini Veneti Raudii Garganega</h3>
+                        <p>A special wine with wonderful taste.</p>
+                    </td>
+                </tr>
+            </table>
+            <p>Through our Italian website community you’ll have a chance to virtually meet many of the winemakers, see
+                their slice of paradise in the Italian countryside and be able share your thoughts and feelings about
+                each
+                of their wines as you taste them for yourselves.</p>
+        </div>
+        <div class="bestsellers-images">
+            <div class="top-image">
+                <img src="assets/Rectangle%2011.png" alt="Glass of wine">
+            </div>
+            <div class="bottom-images">
+                <div class="left"><img src="assets/Rectangle%2012.png" alt="Wine bottles on shelf"></div>
+                <div><img src="assets/Rectangle%2013.png" alt="Wine bottles"></div>
+            </div>
+        </div>
+    </div>
+    <hr class="border-line bottom">
+</section>
+
+<section id="tasting">
+    <div class="side-images">
+        <div class="grapes"><img src="assets/grapes.jpg" alt="Grapes icon"></div>
+        <div class="barrel"><img src="assets/barrel.jpeg" alt="Barrel icon"></div>
+    </div>
+    <form action="registered.html" target="_blank">
+        <fieldset>
+            <legend>
+                <h2 class="white-text">Register for Wine Tasting</h2>
+            </legend>
+            <div class="container-form">
+                <hr class="hr-margin">
+                <p>Each registration includes access to the Wine Tasting, where approximately 18 various wines
+                    will be served. </p> <br>
+                <div class="inline-input-container">
+                    <div>
+                        <label for="name"> Name </label> <br>
+                        <input type="text" name="name" id="name" size="15" required/> <br> <br>
+                    </div>
+                    <div>
+                        <label for="phone-number"> Phone number </label> <br>
+                        <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{9}"/> <br> <br>
+                    </div>
+                </div>
+                <div class="email-input-container">
+                    <label for="email">Email</label> <br>
+                    <input type="email" name="email" id="email" required><br>
+                </div>
+                <div>
+                    <input type="submit" value="Register" id="tasting-registration">
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</section>
+
+<footer id="footer">
+    <div class="footer-container">
+        <div class="contacts" id="contacts">
+            <address>
+                <div class="icons flex-column">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                </div>
+                <div class="address-data flex-column">
+                    <span>Via Pisacane 2, 60019 Senigallia Italy </span>
+                    <span>Telephone: &nbsp<a href="tel:+39 071 63811">+39 071 63811</a></span>
+                    <span>E-mail: &nbsp<a href="mailto:info@gallienoteca.it">info@gallienoteca.it</a></span>
+                    <span>Opening time: Monday to Saturday, from 9 a.m. to 8 p.m.</span>
+                </div>
+            </address>
+        </div>
+
+        <div class="links">
+            <nav>
+                <ul class="flex-column">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#bestsellers">Bestsellers</a></li>
+                    <li><a href="#tasting">Wine tasting</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="social-media">
+            <div class="icons flex-column">
+                <a target="_blank" href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook"
+                                                                       aria-hidden="true"></i></a>
+                <a target="_blank" href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"
+                                                                              aria-hidden="true"></i></a>
+                <a target="_blank" href="https://www.youtube.com/?hl=en"><i class="fa fa-youtube-play"
+                                                                            aria-hidden="true"></i></a>
+            </div>
+
+            <div class="social-media-links flex-column">
+                <a target="_blank" href="https://twitter.com/?lang=en">Twitter</a>
+                <a target="_blank" href="https://www.facebook.com/">Facebook</a>
+                <a target="_blank" href="https://www.instagram.com/?hl=en">Instagram</a>
+                <a target="_blank" href="https://www.youtube.com/?hl=en">YouTube</a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
+<!--add active link to navbar-->
+<!--styles for clicked button-->
+<!--back to top button-->
